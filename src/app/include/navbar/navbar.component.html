@@ -1,0 +1,8 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/"><strong>Loan Management System</strong></a>
+    <div class="form-inline">
+        <button class="btn btn-primary mr-sm-2" *ngIf="!service.session" routerLink="/login">Login</button>&nbsp;
+        <button class="btn btn-primary mr-sm-2" (click)="service.logout()" *ngIf="service.session" href="#">Logout</button>&nbsp;
+        <button class="btn btn-warning my-2 my-sm-0" routerLink="/register">Signup</button>
+    </div> 
+</nav>

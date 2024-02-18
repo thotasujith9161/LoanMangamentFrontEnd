@@ -1,0 +1,47 @@
+<!-- <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg pd-5 mt-5 mb-5">
+                <h1>Welcome to Loan Management System</h1><hr>
+                <div class="alert alert-success" role="alert">
+                    Account has been created! <a routerLink="/login" class="text-primary" style="cursor: pointer;"> Login here ☺️</a>
+                  </div>
+                <form [formGroup]="signUpForm" class="text-left">
+                    <div class="form-group">
+                        <label>Display Name</label>
+                        <input type="text" class="form-control" placeholder="Username" formControlName="diaplayName">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Email Id" formControlName="email">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="*************" formControlName="password">
+                    </div><br>
+                    <button class="btn btn-outline-primary btn-block text-center" (click)="signup()">Create Account</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div> -->
+
+<div class="background-wrap">
+    <div class="background"></div>
+</div>
+
+<form id="registerpanel" action="register" method="post">
+    <h1 id="litheader">User Registration</h1>
+    <div class="inset">
+        <p>
+            <input type="text" name="username"  id="email" placeholder="Username" required>
+        </p>
+        <p>
+            <input type="email" name="email"  id="email id" placeholder="Email Id" required>
+        </p>
+        <p>
+            <input type="password" name="password" id="password" placeholder="password" required>
+        </p>
+    </div>
+    <p class="p-container">
+        <input type="submit" name="registration" id="go" value="Create Account" (click)="signup()">
+    </p>
+
+</form>
